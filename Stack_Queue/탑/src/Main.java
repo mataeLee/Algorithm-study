@@ -3,6 +3,7 @@ public class Main {
     // test case
     static int [] heights = {3,9,9,3,5,7,2};
 
+    // algorithm solution
     static class Solution {
         public int[] solution(int[] heights) {
             int[] answer = new int[heights.length];
@@ -19,6 +20,7 @@ public class Main {
         }
     }
 
+    // result
     public static void main(String[] args) {
         Solution solution = new Solution();
         int [] answer = solution.solution(heights);
