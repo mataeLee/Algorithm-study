@@ -8,13 +8,13 @@ public class Main {
     // algorithm solution
     static class Solution {
         static int answer = 0;
-        static int [] visited;
+        static boolean [] visited;
 
         public int solution(int n, int[][] computers) {
-            visited = new int[n];
+            visited = new boolean[n];
             for(int i=0; i<n; i++){
-                if(visited[i] == 0) {
-                    visited[i] = 1;
+                if(visited[i] == false) {
+                    visited[i] = true;
                     answer++;
                 }
                 dfs(computers,i,n);
@@ -24,8 +24,8 @@ public class Main {
 
         public void dfs(int [][]computers, int edge, int n){
             for(int i=0; i<n; i++){
-                if(computers[edge][i] == 1 && visited[i] ==0){
-                    visited[i] = 1;
+                if(computers[edge][i] == 1 && visited[i] == false){
+                    visited[i] = true;
                     dfs(computers, i, n);
                 }
             }
