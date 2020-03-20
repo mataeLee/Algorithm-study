@@ -27,10 +27,11 @@ public class Main {
             Collections.sort(numberList);
             if(numberList.get(0).num.equals("0"))
                 return "0";
+            StringBuilder builder = new StringBuilder();
             for(int i=0; i<numberList.size(); i++){
-                answer += numberList.get(i).num;
+                builder.append(numberList.get(i).num);
             }
-            return answer;
+            return builder.toString();
         }
     }
 
