@@ -13,7 +13,7 @@ public class Main {
             int answer = 0;
 
             List<Integer> list = new ArrayList<>();
-            
+
             for (int i = 0; i < people.length; i++) {
                 list.add(people[i]);
             }
@@ -21,7 +21,7 @@ public class Main {
             Collections.sort(list, Collections.reverseOrder());
 
             int idx = list.size() - 1;
-            for (int i = 0; i < list.size() && i < idx; i++) {
+            for (int i = 0; i < list.size() && i <= idx; i++) {
                 int a = list.get(i);
                 if (a + list.get(idx) <= limit) {
                     idx--;
