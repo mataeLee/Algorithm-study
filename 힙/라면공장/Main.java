@@ -18,10 +18,10 @@ public class Main {
                 mem[dates[i]][0] = 1;
                 mem[dates[i]][1] = supplies[i];
             }
-            while (date <= k - 1) {
+            while (date < k) {
                 if(mem[date][0] == 1)
                     heap.add(mem[date][1]);
-                if(stock == 0 && date < k){
+                if(stock == 0){
                     stock += heap.poll();
                     answer++;
                 }
