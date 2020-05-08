@@ -9,6 +9,7 @@ public class Main {
     static class Solution {
         public long solution(int n, int[] times) {
             Arrays.sort(times);
+
             long right = (long)times[times.length-1] * (long)n;
             long left = 0;
             long mid, sum;
@@ -21,7 +22,8 @@ public class Main {
                     if(sum > n) break;
                 }
                 if(sum >= n) {
-                    answer = (answer < mid)? answer : mid;
+                    if(answer > mid)
+                        answer = mid;
                     right = mid - 1;
                 }
                 else
