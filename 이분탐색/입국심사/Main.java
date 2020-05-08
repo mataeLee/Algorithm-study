@@ -10,7 +10,7 @@ public class Main {
         public long solution(int n, int[] times) {
             Arrays.sort(times);
             long right = (long)times[times.length-1] * (long)n;
-            long left = 1;
+            long left = 0;
             long mid, sum;
             long answer = right;
             while(left <= right){
