@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Main {
     //test case
-    static int[] budgets = {120, 110, 140, 150};
-    static int M = 485;
+    static int[] budgets = {1, 1, 1, 1000};
+    static int M = 900;
 
     //algorithm solution
     static class Solution {
@@ -12,7 +12,7 @@ public class Main {
             Arrays.sort(budgets);
             int sum = 0;
             for(int i=0; i<budgets.length; i++){
-                if(i == budgets.length-1) return budgets[i];
+                if(i == budgets.length-1) return (budgets[i] < M)? budgets[i] : M;
                 if(M/(budgets.length-i) < budgets[i]) return M/(budgets.length-i);
                 M -= budgets[i];
             }
