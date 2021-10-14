@@ -4,62 +4,69 @@ import java.util.*;
 public class Main {
     // 백준 자료구조 거짓말 - 1043
     static int[] parent;
+    static class Party{
+        public List<Integer> members;
+        Party(){
+            members = new ArrayList<>();
+        }
+    }
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int answer = 0;
 
         String[] strs = br.readLine().split(" ");
-        int n = Integer.parseInt(strs[0]); // 사람 수
-        boolean[] know = new boolean[n+1];
 
-        int m = Integer.parseInt(strs[1]); // 파티 수
-        int[][] partys = new int[m][];
-        boolean[] party = new boolean[m];
-
-        strs = br.readLine().split(" ");
-        int answer = 0;
-        for(int i=1; i<Integer.parseInt(strs[0])+1; i++){
-            know[Integer.parseInt(strs[i])] = true; // 거짓말을 아는 사람
-        }
+        int n = Integer.parseInt(strs[0]);
+        int m = Integer.parseInt(strs[1]);
 
         parent = new int[n+1];
-        for(int i=0; i<n+1; i++){
+        for(int i=0; i<parent.length; i++){
             parent[i] = i;
         }
+        boolean[] aware = new boolean[n+1];
+
+        strs = br.readLine().split(" ");
+        int count  = Integer.parseInt(strs[0]);
+
+        for(int i=1; i<count+1; i++){
+            aware[Integer.parseInt(strs[i])] = true;
+        }
+
+        List<Party> parties = new ArrayList<>();
 
         for(int i=0; i<m; i++){
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            int count = Integer.parseInt(st.nextToken());
-            partys[i] = new int[count];
-
+            strs = br.readLine().split(" ");
+            Party party = new Party();
+            boolean truth = false;
             int idx = -1;
-            for(int j=0; j<count; j++){
-                int num = Integer.parseInt(st.nextToken());
-                partys[i][j] = num;
-                if(idx < 0 && know[num]){
-                    idx = j;
+            for(int j=1; j<strs.length; j++){
+                int person = Integer.parseInt(strs[j]);
+                party.members.add(person);
+                if(!truth && aware[find(person)]){
+                    truth = true;
+                    idx = party.members.size()-1;
                 }
             }
-            if(idx == -1){
-                int val = partys[i][0];
-                for(int j=1; j<count; j++){
-                    union(val, partys[i][j]);
+            if(truth){
+                for(int j=0; j<party.members.size(); j++){
+                    if(idx != j)
+                        union(party.members.get(idx), party.members.get(j));
                 }
             }
             else{
-                party[i] = true;
-                int val = partys[i][idx];
-                for(int j=0; j<count; j++){
-                    if(j == idx) continue;
-                    union(val, partys[i][j]);
+                int val = party.members.get(0);
+                for(int j=1; j<party.members.size(); j++){
+                    union(val, party.members.get(j));
                 }
             }
+            parties.add(party);
         }
 
-        for(int i=0; i<m; i++){
-            if(party[i]) continue;
+        for(int i=0; i<parties.size(); i++){
+            Party party = parties.get(i);
             boolean lie = true;
-            for(int j=0; j<partys[i].length; j++){
-                if(know[find(partys[i][j])]) {
+            for(int j=0; j<party.members.size(); j++){
+                if(aware[find(party.members.get(j))]) {
                     lie = false;
                     break;
                 }
@@ -67,17 +74,17 @@ public class Main {
             if(lie) answer++;
         }
 
+
         System.out.println(answer);
     }
 
-    public static void union(int a, int b){
+    static int find(int a){
+        if(parent[a] == a) return a;
+        else return parent[a] = find(parent[a]);
+    }
+    static void union(int a, int b){
         a = find(a);
         b = find(b);
         if(a != b) parent[b] = a;
-    }
-
-    public static int find(int a){
-        if(parent[a] == a) return a;
-        else return parent[a] = find(parent[a]);
     }
 }
