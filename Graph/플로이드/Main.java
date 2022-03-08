@@ -11,7 +11,7 @@ public class Main {
 
         int[][] distance = new int[n][n];
         for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++) if(i != j) distance[i][j] = 100000 * n + 1;
+            for(int j=0; j<n; j++) if(i != j) distance[i][j] = Integer.MAX_VALUE/2;
         }
 
         for(int i=0; i<m; i++){
