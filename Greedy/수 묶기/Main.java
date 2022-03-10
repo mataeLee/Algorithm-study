@@ -27,12 +27,12 @@ public class Main {
                 answer += num1;
                 break;
             }
-            if(num1 == 1){
-                answer += num1;
+            int num2 = pos.poll();
+            if(num1 == 1 || num2 == 1){
+                answer += num1 + num2;
                 continue;
             }
-            int num2 = pos.poll();
-            answer += num1 * num2;
+            else answer += num1 * num2;
         }
 
         while (!neg.isEmpty()){
