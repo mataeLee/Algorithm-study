@@ -12,7 +12,7 @@
 [10250 ACM 호텔](https://www.acmicpc.net/problem/10250) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10250.java) - math, B3  
 [1043 거짓말](https://www.acmicpc.net/problem/1043) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_1043.java) - graph, G4  
 [10757 큰 수 A+B](https://www.acmicpc.net/problem/10757) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10757.java) - graph, G4  
-[1043 거짓말](https://www.acmicpc.net/problem/1043) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_1043.java) - graph, G4   
-
+[10773 제로](https://www.acmicpc.net/problem/10773) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10773.java) - stack, S4  
+[10775 공항](https://www.acmicpc.net/problem/10775) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10775.java) - greedy, G2   
 
 ## 2. Programmers
