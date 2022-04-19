@@ -14,5 +14,5 @@
 [10757 큰 수 A+B](https://www.acmicpc.net/problem/10757) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10757.java) - graph, G4  
 [10773 제로](https://www.acmicpc.net/problem/10773) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10773.java) - stack, S4  
 [10775 공항](https://www.acmicpc.net/problem/10775) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10775.java) - greedy, G2   
-
+[10799 쇠막대기](https://www.acmicpc.net/problem/10799) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10799.java) - stack, S3   
 ## 2. Programmers
