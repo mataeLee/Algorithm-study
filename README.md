@@ -15,4 +15,8 @@
 [10773 제로](https://www.acmicpc.net/problem/10773) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10773.java) - stack, S4  
 [10775 공항](https://www.acmicpc.net/problem/10775) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10775.java) - greedy, G2   
 [10799 쇠막대기](https://www.acmicpc.net/problem/10799) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10799.java) - stack, S3   
+[10809 알파벳 찾기](https://www.acmicpc.net/problem/10809) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10809.java) - string, B2 
+[10816 숫자카드](https://www.acmicpc.net/problem/10816) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10816.java) - binary_search, S4   
+[10828 스택](https://www.acmicpc.net/problem/10828) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10828.java) - stack, S4   
+[10845 큐](https://www.acmicpc.net/problem/10845) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10845.java) - queue, S4   
 ## 2. Programmers
