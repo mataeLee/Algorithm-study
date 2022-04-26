@@ -19,4 +19,7 @@
 [10816 숫자카드](https://www.acmicpc.net/problem/10816) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10816.java) - binary_search, S4   
 [10828 스택](https://www.acmicpc.net/problem/10828) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10828.java) - stack, S4   
 [10845 큐](https://www.acmicpc.net/problem/10845) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10845.java) - queue, S4   
+[1085 직사각형에서 탈출](https://www.acmicpc.net/problem/1085) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_1085.java) - math, B3   
+[10866 덱](https://www.acmicpc.net/problem/10866) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10866.java) - data structure, S4   
+[10868 최솟값](https://www.acmicpc.net/problem/10868) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10868.java) - segment tree, G1   
 ## 2. Programmers
