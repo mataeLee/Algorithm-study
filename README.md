@@ -28,6 +28,7 @@
 #### Bronze   
 [10250 ACM 호텔](https://www.acmicpc.net/problem/10250) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10250.java) - math, B3  
 [10809 알파벳 찾기](https://www.acmicpc.net/problem/10809) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10809.java) - string, B2  
-[1085 직사각형에서 탈출](https://www.acmicpc.net/problem/1085) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_1085.java) - math, B3   
+[1085 직사각형에서 탈출](https://www.acmicpc.net/problem/1085) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_1085.java) - math, B3  
+[10870 피보나치 수5](https://www.acmicpc.net/problem/10870) | [코드](https://github.com/mataeLee/Algorithm-study/blob/master/BOJ/BOJ_10870.java) - math, B2  
 
 ## 2. Programmers
