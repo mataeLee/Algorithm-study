@@ -14,11 +14,15 @@ public class Main {
             int m = Integer.parseInt(br.readLine());
             String[] arr = new String[m];
             for(int j=0; j<m; j++){
-                arr[j] = br.readLine();
+                arr[j] = br.readLine().trim().replace(" ", "");
             }
             Arrays.sort(arr);
             boolean cons = false;
-            if(arr.length == 1) sb.append("YES");
+            if(arr.length == 1) {
+            	sb.append("YES");
+            	sb.append("\n");
+            	continue;
+            }
             for(int j=1; j<m; j++){
                 String str = arr[j-1];
                 if(arr[j].indexOf(str) == 0) {
